@@ -10,7 +10,7 @@ int print_percent(va_list c);
 int print_char(va_list arguments);
 int print_string(va_list arguments);
 int print_binary(va_list);
-
+int print_integer(va_list a);
 /**
  * struct top - structure
  * @c: character
