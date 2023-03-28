@@ -46,9 +46,11 @@ int print_string(va_list arguments)
  * Return: 0
  */
 
-int print_percent(va_list c)
+int print_percent(va_list a)
 {
-	_putchar (37);
+	int percent = va_arg(a, int);
+	percent = 37;
+	_putchar (percent);
 	return (1);
 }
 

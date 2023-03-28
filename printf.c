@@ -10,17 +10,20 @@
 
 int _printf(const char *format, ...)
 {
+
+	int i;
+	int j;
 	va_list args;
 	int sum = 0;
 	var_a array[] = {
 	{"c", print_char},
 	{"s", print_string},
 	{"%", print_percent},
-	{NULL, NULL},
+	{NULL, NULL}
 	};
 
 	va_start(args, format);
-	int i, j;
+
 
 	for (i = 0; format[i] != '\0';)
 	{
