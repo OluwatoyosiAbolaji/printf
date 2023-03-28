@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_numbers - print decimal numbers in base ten
+ * print_number - print decimal numbers in base ten
  * @a: variable names
  * Return: 0
  */
