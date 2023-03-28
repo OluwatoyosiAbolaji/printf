@@ -47,6 +47,7 @@ int print_binary(va_list a)
 	int num = va_arg(a, int);
 	int i, j, length = 0;
 	int *binary;
+
 	binary = (int *) malloc(sizeof(int) * 200);
 
 	if (binary == NULL)
