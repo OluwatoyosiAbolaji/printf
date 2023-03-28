@@ -31,9 +31,7 @@ int print_string(va_list arguments)
 
 	str = va_arg(arguments, char *);
 	if (str == NULL)
-	{
-		return (0);
-	}
+		str = "(null)";
 	for (i = 0; str[i] != '\0'; i++)
 		len +=  _putchar(str[i]);
 	return (len);
@@ -48,10 +46,13 @@ int print_string(va_list arguments)
 
 int print_percent(va_list a)
 {
-	int percent = va_arg(a, int);
+	char *str;
 
-	percent = 37;
-	_putchar (percent);
-	return (1);
+	str = "%";
+	if (va_arg(a, int) == *str)
+	{
+		return (*str);
+	}
+	return (*str);
 }
 

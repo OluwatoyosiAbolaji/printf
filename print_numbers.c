@@ -34,7 +34,7 @@ int print_number(va_list a)
 		n = n / 10;
 		i++;
 	}
-	for (j = i - i; j >= 0; j--)
+	for (j = i - 1; j >= 0; j--)
 	{
 		len += _putchar(number[j] + '0');
 	}
