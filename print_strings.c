@@ -41,7 +41,7 @@ int print_string(va_list arguments)
 
 /**
  * print_percent - print string
- * @c: functions
+ * @a: functions
  *
  * Return: 0
  */
