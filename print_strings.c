@@ -49,6 +49,7 @@ int print_string(va_list arguments)
 int print_percent(va_list a)
 {
 	int percent = va_arg(a, int);
+
 	percent = 37;
 	_putchar (percent);
 	return (1);
