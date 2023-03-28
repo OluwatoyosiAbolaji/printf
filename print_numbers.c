@@ -45,12 +45,14 @@ int print_number(va_list a)
 int print_binary(va_list a)
 {
 	int num = va_arg(a, int);
-	int i = 0, j, length = 0;
-	int *binary = malloc(sizeof(int) * 200);
+	int i, j, length = 0;
+	int *binary;
+	binary = (int *) malloc(sizeof(int) * 200);
 
 	if (binary == NULL)
 		return (0);
-	while (num > 0)
+	i = 0;
+	while (num != 0)
 	{
 		binary[i] = num % 2;
 		num /= 2;
