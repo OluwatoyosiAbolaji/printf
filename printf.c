@@ -22,7 +22,7 @@ int _printf(const char *format, ...)
 	va_start(args, format);
 	int i, j;
 
-//	for (i = 0; format[i] != '\0';)
+	for (i = 0; format[i] != '\0';)
 	{
 		if (format[i] == '%')
 		{
