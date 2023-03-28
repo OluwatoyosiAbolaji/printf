@@ -8,38 +8,32 @@
 
 int print_number(va_list a)
 {
-	int i, n, j = 0;
-	int len;
-	int *number;
+	unsigned int i, j, countnum, count;
+	int n;
 
-	number = malloc(sizeof(int) * 100);
-	if (number == NULL)
-	{
-		return (0);
-	}
-
+	count = 0;
 	n = va_arg(a, int);
-	len = 0;
+		if (n < 0)
+		{
+			i = (n * -1);
+			count += _putchar('-');
+		}
+		else
+			i = n;
 
-	if (n < 0)
+	j = i;
+	countnum = 1;
+	while (j > 9)
 	{
-		len += _putchar('-');
-		n = -n;
+		j /= 10;
+		countnum *= 10;
 	}
-
-	i = 0;
-	while (n != 0)
+	while (countnum >= 1)
 	{
-		number[i] = n % 10;
-		n = n / 10;
-		i++;
+		count += _putchar(((i / countnum) % 10) + '0');
+		countnum /= 10;
 	}
-	for (j = i - 1; j >= 0; j--)
-	{
-		len += _putchar(number[j] + '0');
-	}
-	free(number);
-	return (len);
+	return (count);
 }
 
 /**
