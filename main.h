@@ -24,7 +24,7 @@ struct top
 	int (*p)(va_list);
 };
 typedef struct top var_a;
-
+int func(const char *format, var_a array[], va_list args);
 
 #endif /* main.h */
 
