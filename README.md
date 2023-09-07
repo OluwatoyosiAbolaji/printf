@@ -1,3 +1,1 @@
-This repository contains files on customizing a printf function
-Authors: OluwatoyosiAbolaji and Ikeoluwapo
-
+printf function by Glory Adeh and Lase Phillips
